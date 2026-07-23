@@ -1,0 +1,12 @@
+// TODO: Add a comment here that explains what the global.json file does.
+{
+  "sdk": {
+    // TODO: Add a comment here that explains why rollForward's value is "latestPatch".
+    "rollForward": "latestPatch",
+    "version": "10.0.302"
+  },
+  "test": {
+    // TODO: Add a comment here that explains why runner's value is "Microsoft.Testing.Platform".
+    "runner": "Microsoft.Testing.Platform"
+  }
+}
