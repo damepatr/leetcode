@@ -1,0 +1,32 @@
+/*
+ * Here's how the official .NET documentation describes global.json files:
+ * > The global.json file allows you to define which .NET SDK version is used when you run .NET CLI commands.
+ * > Selecting the .NET SDK version is independent from specifying the runtime version a project targets.
+ * > The .NET SDK version indicates which version of the .NET CLI is used.
+ * 
+ * In general, having this file in .NET projects is recommended.
+ * This is for a variety of reasons; some of which are described later in this file.
+ * 
+ * Additional information can be found here: https://learn.microsoft.com/en-us/dotnet/core/tools/global-json.
+ */
+{
+  "sdk": {
+    /*
+	 *******************************************************************************
+	 * Why use the "latestPatch" value instead of other values like "latestFeature"?
+	 *******************************************************************************
+	 *
+	 * If (a) the "latestFeature" value is used,
+	 * (b) a new feature is added to a feature band,
+	 * and (c) a developer uses that feature and pushes changes without incrementing the version number in this file,
+	 * then failures or errors may occur for developers and/or CI/CD pipelines that are using an old .NET SDK.
+	 *
+	 * To prevent this issue, this file targets a specific feature band.
+	 * Whenever a new feature band is released, the version number in this file should be incremented.
+	 *
+	 * For additional information, see https://learn.microsoft.com/en-us/dotnet/core/releases-and-support.
+	 */
+    "rollForward": "latestPatch",
+    "version": "10.0.302"
+  }
+}
