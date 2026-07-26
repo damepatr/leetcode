@@ -2,4 +2,7 @@
   <Folder Name="/src/">
     <Project Path="src/DamePatr.LeetCode.Problem628/DamePatr.LeetCode.Problem628.csproj" />
   </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/DamePatr.LeetCode.Problem628.Tests/DamePatr.LeetCode.Problem628.Tests.csproj" />
+  </Folder>
 </Solution>
