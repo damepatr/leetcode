@@ -1,2 +1,5 @@
 <Solution>
+  <Folder Name="/src/">
+    <Project Path="src/DamePatr.LeetCode.Problem628/DamePatr.LeetCode.Problem628.csproj" />
+  </Folder>
 </Solution>
